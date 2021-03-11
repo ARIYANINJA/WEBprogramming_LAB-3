@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 50rem;
+  background-color: black;
+  box-shadow: 0 0.5rem 3rem rgb(0, 89, 255);
+}
+.name {
+  text-align: center;
+  color: aqua;
+}
+.month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(79, 233, 18);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.month h1 {
+  margin: 0 20px;
+  width: 300px;
+  text-align: center;
+}
+.month i {
+  cursor: pointer;
+  padding: 20px;
+}
+.day {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day div {
+  width: calc(50rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(79, 233, 18);
+}
+.day div:hover {
+  font-size: 2rem;
+}
+.week-day {
+  display: flex;
+}
+.week-day div {
+  width: calc(50rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: orangered;
+}
+.week-day div:hover {
+  font-size: 2rem;
+}
+.day div:not(.week-day):hover {
+  cursor: pointer;
+  border: 5px dotted orangered;
+  border-radius: 20px;
+}
+.event {
+  border: 1px solid orangered;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+.listed-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgba(251, 255, 0, 0.842);
+  padding: 10px 50px 10px 50px;
+}
+.currentMonth {
+  color: rgb(0, 183, 255) !important;
+}
+.currentMonth:hover {
+  font-size: 2rem;
+}
+.event-header {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+.events {
+  background-color: rgb(6, 50, 80);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.search h3 {
+  color: white;
+}
+.result {
+  display: flex;
+  width: 636px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgba(251, 255, 0, 0.842);
+}
+.search-input {
+  padding: 5px;
+  margin: 10px 0 5px 0;
+}
+.search-result h3 {
+  text-align: center;
+}
